@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
+//use App\AdminUser;
 use App\AdminUser;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -15,13 +16,13 @@ class LoginController extends Controller
     public function index(){
 
 
-//        $flight = AdminUser::where('id', 1)->first();
+//        $flight = AdminUser::created(['']);
 //        dd($flight);
     	$data = [
     		'title' => "我是页面标题",
     		'content' => "我是页面内容，我是内容，正文！"
     	];
-        return view('admin.login.index',$data);
+        return view('admin.login',$data);
     }
 
 
@@ -30,7 +31,7 @@ class LoginController extends Controller
         $yzCode = $this->checkImgCode($request->post('yzcode'));
         if(!$yzCode){
             $html['code'] = 0;
-            
+
         }
         $data = [
             'nick_name'=> $request->post('user'),
