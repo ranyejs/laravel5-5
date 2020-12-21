@@ -1,0 +1,155 @@
+摩寂寞互动公众平台：
+	用户名：info@moreedge.cn
+	密  码：more2006
+	钱包账号：1232883202
+	钱包密码:830012
+	APPID：wx4245a51a6748d728
+	APPSECRET：430971f249d0337e041c2b67d5ed4630
+	//商户支付密钥Key。审核通过后，在微信发送的邮件中查看
+	const KEY = 'Ehzn52kBt6jbm4A6I27gF2L259V9yGWq';
+	//JSAPI接口中获取openid，审核后在公众平台开启开发模式后可查看
+	const APPSECRET = '430971f249d0337e041c2b67d5ed4630';
+
+摩寂爱分享公众平台：
+	用户名:moreedge2006@sina.com
+	密  码：more2006
+	微信支付商户号:1354724802
+	钱包帐号:1354724802@1354724802
+	钱包密码:832896
+	APPID：wxda935de4c1a25b43
+	APPSECRET：a394775d457ce1addf6c389fc451fb32
+	//商户支付密钥Key。审核通过后，在微信发送的邮件中查看
+	const KEY = 'Ehzn52kBt6jbm4A6I27gF2L259V9yGWq';
+	//JSAPI接口中获取openid，审核后在公众平台开启开发模式后可查看
+	const APPSECRET = 'a394775d457ce1addf6c389fc451fb32';
+
+
+摩寂主服务器：
+	账号:info@moreedge.cn
+	密码：more2006?
+
+摩寂副服务器：
+	账号：20722325
+	密码：more750814
+
+友盟统计：
+
+友盟统计账号：重庆摩寂数码设计有限公司
+
+
+密码：more2006
+
+
+置典小程序：
+账号：hushuang@hkland.com
+
+密码：hkland123456
+APPID:wxbd5dcda9b76d68ac
+APPSECRET:6a5211867c138e448a9fe4f993f7edf8
+
+置典活动小程序
+
+账号：2836115971@qq.com
+
+密码：hkland123456
+APPID:wxc7aa7285de23fd68	
+APPSECRET:a3c2d5bcceaf4e536f539d5d8dbc5ad5
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+centos服务器：
+远程连接密码：162760
+ip：114.215.137.114
+用户名:root
+密  码：more2006?
+
+xcache登录名:admin
+xcache密码：more2006
+
+siege -c 2000 -r 50 -f ./example.url 压力测试
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+51.la信息：
+	账号:info@moreedge.cn
+	密码：more2006
+
+摩寂爱分享财付通充值:
+350231192
+jylyunjj1
+926381
+
+
+大都会ftp信息:
+地址： byu2487390001.my3w.com
+用户名： byu2487390001
+密码：more2006
+域名： 
+
+
+置地后台：
+http://weixin.moreedge.cn/HKland/zhidihui/admin/index.php
+账号:admin0428
+密码：more2006
+
+
+
+小天鹅ftp
+网站服务器ftp
+用户：webftp
+密码：cygnet@20170220
+
+
+融恒网站最新信息:
+阿里帐号：cqrlsyyxgs   密码：stage2014 
+远程连接密码：422731  
+系统用户名：root   密码：cqrlsyyxgsSTAGE2014         
+数据库：root 123
+
+18T小程序资料
+appid:wxd26f7b7e5ec661ed
+
+
+appsecret:df3372417990173913b6dd8604a1df9e
+QQ号码：2987685114@qq.com
+
+密码：chongqing18T
+
+置典公众平台
+appid:wxab00ad58e5ee1c13
+appsecret:f6f8178fda3d0e0283ae9a38d5f5ea38
+EncodingAESKey:gKx0oNrGkC4A4Q2VaV8bmLiJzDnK6rB0tchhTpqY7WD
+
+
+配置负载均衡：
+1：创建一个快照
+2：自定义镜像
+3：创建实例
+4：登录新买的服务器修改apache配置  凡是有D盘的东西要删除
+5：开启apache
+6：点击负载均衡，选择后端服务，添加服务器到负载均衡中，还可调整权重
+
+
+
+摩寂微信小程序
+账号：moreedge2017xcx@163.com
+密码：more2006
+AppID  wx35e6d14030917471
+Appsecret 929335c69979a3ad56edd204fc967582
+
+
+CGY服务器
+ip:159.138.31.233
+用户名:administrator
+密码:more2006?
+
+ -webkit-animation: tada 1s linear 0s infinite;   左右摇摆效果
+-webkit-animation: zoomLoop 1s linear 0s infinite;  呼吸效果
+
+四个小程序链接：
+http://www.php.cn/course/879.html
+http://www.php.cn/course/778.html
+http://www.php.cn/course/675.html
+http://www.php.cn/course/244.html
+
+
+我们目前的需求是已有一个注册的微信支付商户号了，同时也有几个跟我们合作的商家需要在我们的商户号上分账结算，请问这个目前微信支付有什么解决方案
