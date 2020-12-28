@@ -15,26 +15,39 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 //前台路由组
 Route::group(['namespace' => 'Home'], function(){
     // 控制器在 "App\Http\Controllers\Home" 命名空间下
 
 });
 
+//后台登录路由
+Route::group(['namespace' => 'Admin'],function(){
+    //后台登录生成验证码
+    Route::get('/createimg','LoginController@createImg');
+   //测试加密
+    Route::get('/encrypt','LoginController@encrypt');
+   //后台登录
+    Route::get('/admin/login', 'LoginController@index');
+    Route::post('/admin/dologin', 'LoginController@doLogin');
+});
 
 
-//后台路由组
-Route::group(['namespace' => 'Admin'], function(){
+//后台已经登录路由组
+Route::group(['prefix'=>'admin','namespace' => 'Admin','middleware'=>'isLogin'], function(){
     // 控制器在 "App\Http\Controllers\Admin" 命名空间下
 
-    Route::get('/login', 'LoginController@index');
+    Route::get('index', 'AdminController@index');
+    Route::get('welcome', 'AdminController@welcome');
+    Route::get('logout', 'AdminController@logout');
 
-    //生成二维码
-    Route::get('/login/createimg','LoginController@createImg');
-    //验证二维码
-    Route::get('/login/checkimgcode','LoginController@checkImgCode');
+    //后台用户模块相关
+    Route::resource('user','UserController');
 
-    Route::post('/login/dologin', 'LoginController@doLogin');
+    //角色
+    Route::resource('role','RoleController');
 
+    //权限
+    Route::resource('promission','PromissionController');
 });
+
