@@ -47,7 +47,10 @@ Route::group(['prefix'=>'admin','namespace' => 'Admin','middleware'=>'isLogin'],
     //角色
     Route::resource('role','RoleController');
 
+    Route::get('auth/{id}','RoleController@auth');
+    Route::post('do_auth','RoleController@doAuth');
+
     //权限
-    Route::resource('promission','PromissionController');
+    Route::resource('permission','PermissionController');
 });
 

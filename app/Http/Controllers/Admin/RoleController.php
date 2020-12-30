@@ -3,13 +3,49 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Model\AdminUser;
+use App\Model\Permission;
 use App\Model\Role;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Crypt;
 
 class RoleController extends Controller
 {
+
+    /**
+     * 查看权限
+     * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Foundation\Application|\Illuminate\View\View
+     */
+    public function auth($id){
+        $role = Role::find($id);
+
+        $own_perms = $role->permission;
+        //dd($role);
+        //权限列表
+        $permission = Permission::where('status', 0)->get();
+        //dd($permission);
+        $own_perm = [];
+        foreach($own_perms as $v){
+            $own_perm[] = $v->id;
+        }
+        //dd($own_perm);
+        //查看哪些已经添加过了
+        //dd($permission);
+        return view('admin.role.auth',compact('permission','own_perms','own_perm','role'));
+    }
+
+    public function doAuth(Request $request){
+        $roleId = $request->input('role_id');
+        $perm_arr = $request->input('like');
+
+        $role = Role::find($roleId);
+        $own_perms = $role->permission;
+        
+    }
+
+
     /**
      * Display a listing of the resource.
      *

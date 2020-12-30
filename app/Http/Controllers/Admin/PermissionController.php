@@ -33,6 +33,7 @@ class PermissionController extends Controller
     public function create()
     {
         //
+        return view('admin.permission.create');
     }
 
     /**
@@ -43,7 +44,33 @@ class PermissionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        //dd($input);
+        $find = Role::where('title',$input['title'])->first();
+        if($find){
+            $data = [
+                'status'=>2,
+                'message'=>'该权限已经存在',
+            ];
+            return $data;
+        }
+        $res = Role::create([
+            'title' => $input['title'],
+            'urls'   => $input['urls'],
+            'created_time' => date('Y-m-d H:i:s')
+        ]);
+        if($res){
+            $data = [
+                'status'=>0,
+                'message'=>'添加成功',
+            ];
+        }else{
+            $data = [
+                'status'=>1,
+                'message'=>'添加失败',
+            ];
+        }
+        return $data;
     }
 
     /**

@@ -43,7 +43,7 @@
                         </div>
                         <div class="layui-card-header">
                             <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-                            <button class="layui-btn" onclick="xadmin.open('添加权限','/admin/user/create',600,400)"><i class="layui-icon"></i>添加</button>
+                            <button class="layui-btn" onclick="xadmin.open('添加权限','/admin/permission/create',600,400)"><i class="layui-icon"></i>添加</button>
                         </div>
                         <div class="layui-card-body layui-table-body layui-table-main">
                             <table class="layui-table layui-form">
@@ -102,7 +102,6 @@
 {{--                                  <a class="next" href="">&gt;&gt;</a>--}}
                                     {{ $permissionList->links() }}
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -115,10 +114,8 @@
         var laydate = layui.laydate;
         var  form = layui.form;
 
-
         // 监听全选
         form.on('checkbox(checkall)', function(data){
-
           if(data.elem.checked){
             $('tbody input').prop('checked',true);
           }else{
@@ -169,7 +166,7 @@
               //发异步删除数据
               $.ajax({
                   type:'DELETE',
-                  url:'/admin/user/'+id,
+                  url:'/admin/permission/'+id,
                   dataType:'json',
                   headers: {
                       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

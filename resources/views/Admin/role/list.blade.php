@@ -75,9 +75,9 @@
 {{--                                        <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">--}}
 {{--                                            <i class="layui-icon">&#xe601;</i>--}}
 {{--                                        </a>--}}
-{{--                                        <a title="编辑"  onclick="xadmin.open('编辑','/admin/role/{{$v->id}}/edit',600,400)" href="javascript:;">--}}
-{{--                                            <i class="layui-icon">&#xe642;</i>--}}
-{{--                                        </a>--}}
+                                        <a title="授权"  onclick="xadmin.open('授权','/admin/auth/{{$v->id}}',800,600)" href="javascript:;">
+                                            <i class="layui-icon">&#xe642;</i>
+                                        </a>
 {{--                                        <a onclick="xadmin.open('修改密码','/admin/user/edit_password',600,400)" title="修改密码" href="javascript:;">--}}
 {{--                                            <i class="layui-icon">&#xe631;</i>--}}
 {{--                                        </a>--}}

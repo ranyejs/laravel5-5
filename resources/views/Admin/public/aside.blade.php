@@ -13,9 +13,9 @@
                             <cite>会员列表</cite></a>
                     </li>
                     <li>
-                        <a onclick="xadmin.add_tab('角色管理','/admin/role')">
+                        <a onclick="xadmin.add_tab('角色分类','/admin/role')">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>角色管理</cite></a>
+                            <cite>角色分类</cite></a>
                     </li>
                     <li>
                         <a onclick="xadmin.add_tab('权限分类','/admin/permission')">
